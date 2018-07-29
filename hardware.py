@@ -10,6 +10,7 @@ def slow_process_to_calculate_availability(provider, name):
     return random.choice(['HIGH', 'MEDIUM', 'LOW'])
 
 
+
 @application.route('/hardware/')
 def hardware():
     con = sql.connect('database.db')
